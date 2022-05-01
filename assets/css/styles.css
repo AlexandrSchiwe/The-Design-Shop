@@ -1,0 +1,392 @@
+/* ======================================= 
+                Resources
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* 
+font-family: 'Karla', sans-serif;
+*/
+
+/* Colors */
+
+/* 
+
+#323A45
+#848484
+
+*/
+
+/* ======================================= 
+                General
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Karla', sans-serif;
+    padding: 0 10%;
+}
+
+header > a {
+    color: #323A45;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header > a:hover {
+    color: #848484;
+}
+
+h2 {
+    color: #323A45;
+    font-size: 1.4rem;
+    margin: 10px 0 5px 0;
+    font-weight: 500;
+}
+
+p {
+    color: #848484;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+img:hover {
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease; 
+}
+
+.overlay:hover {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    transition: 0.8s ease;
+}
+
+#slide-in-menu {
+    display: hidden;
+}
+
+#slide-in-menu > ul > li > a {
+    text-decoration: none;
+    color: #323A45;
+}
+
+#slide-in-menu > ul > li > a:hover {
+    color: white;
+}
+
+header > div:first-of-type:hover {
+    cursor: pointer;
+
+}
+
+
+button {
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    color: #323A45;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #323A45;
+    color: #848484;
+}
+
+/* ======================================= 
+                Header
+======================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0 0 0;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: #323A45;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+header > nav > ul > li > a:hover {
+    color: #848484;
+}
+
+/* ======================================= 
+            Main/ Hero
+======================================== */
+
+.shop-header {
+    margin-top: 4vh;
+}
+
+main > .shop-header img {
+    width: 100%;
+}
+
+main > .shop-header > section {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 0;
+}
+
+/* ======================================= 
+            Main/Shop
+======================================== */
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 30px;
+}
+
+.shop-grid > article > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-grid img {
+    width: 100%;
+}
+
+
+/* ======================================= 
+        Main/Shop/Last Section
+======================================== */
+
+.shop-grid-last {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 30px;
+}
+
+.shop-grid-last > article > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-grid-last img {
+    width: 100%;
+}
+
+/* ======================================= 
+        Main/Shop/Last Section
+======================================== */
+
+footer > section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 10vh 0;
+    gap: 5px;
+}
+
+footer > section > div > p {
+    color: #323A45;
+}
+
+span {
+    font-weight: 600;
+}
+
+footer section div > p > span > a {
+    text-decoration: none;
+    color: #323A45;
+    font-weight: 700;
+}
+
+footer > section > div > a {
+    display: block;
+    text-decoration: none;
+    color: #323A45;
+    font-size: 1.3rem;
+}
+
+footer > section > div:nth-of-type(2), div:nth-of-type(6) {
+    margin-left: 35%;
+}
+
+footer > section > div:nth-of-type(5) > p {
+    line-height: 20px;
+}
+
+footer > p {
+    display: inline;
+    padding-bottom: 3vh;
+}
+
+footer > p:first-of-type::after {
+    content: "\2022";
+    margin: 1%;
+    font-size: 2rem;
+}
+
+footer div:nth-of-type(7) > p:nth-last-of-type(1) {
+    font-style: italic;
+    color: #323A45
+}
+
+footer > section > div > h2, p, a {
+    margin-bottom: 1vh;
+}
+
+/* ======================================= 
+    Media-Queries: Breakpoint 600px
+======================================== */
+
+@media only screen and (max-width: 600px) {
+    .shop-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .shop-grid-last {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    footer > section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-items: center;
+        grid-template-areas:
+        "box1"
+        "box5" 
+        "box2"
+        "box6"
+        "box3"
+        "box7"
+        "box4"
+        "box8"; 
+        margin: 10vh 0;
+        gap: 5px;
+    }
+
+    .box1 {
+        grid-area: box1;
+    }
+
+    .box2 {
+        grid-area: box2;
+    }
+
+    .box3 {
+        grid-area: box3;
+    }
+
+    .box4 {
+        grid-area: box4;
+    }
+
+    .box5 {
+        grid-area: box5;
+    }
+
+    .box6 {
+        grid-area: box6;
+    }
+
+    .box7 {
+        grid-area: box7;
+    }
+
+    .box8 {
+        grid-area: box8;
+    }
+
+    /* Gibt es eine andere Möglichkeit ? */
+
+    footer > section > div:nth-of-type(2), div:nth-of-type(6) {
+        margin-left: 0;
+    }
+
+    header {
+        transition: all 0.5s linear;
+    }
+    
+    header div:nth-of-type(1) {
+        margin: 10px;
+    }
+    
+    header div span {
+        display: block;
+        width: 60px;
+        height: 5px;
+        margin: 4px 0 4px auto;
+        background-color: black;
+    }
+
+    header nav {
+        display: none;
+    }
+    
+    header div:nth-of-type(2) {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        left: 100%;
+        background-color: #848484;
+        color: #323A45;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s linear;
+    }
+    
+    header div:nth-of-type(2) ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    header div:nth-of-type(2) ul li {
+        margin: 20px 0;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #slide-in-menu {
+        display: none;
+    }
+}
